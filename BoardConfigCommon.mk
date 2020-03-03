@@ -190,5 +190,7 @@ WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
+TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
+
 # Inherit the proprietary files
 include vendor/asus/sdm660-common/BoardConfigVendor.mk
