@@ -275,4 +275,7 @@
     <string name="reset_stats_title">Reset battery stats</string>
     <string name="reset_stats_summary">Battery stats will get reset when charging limit is reached</string>
 
+    <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">Dirac Sound</string>
+
 </resources>
