@@ -100,6 +100,16 @@ static void set_build_fingerprint(const char *fingerprint){
     property_override("ro.vendor.build.fingerprint", fingerprint);
 }
 
+void set_avoid_gfxaccel_config() {
+    struct sysinfo sys;
+    sysinfo(&sys);
+
+    if (sys.totalram <= 3072ull * 1024 * 1024) {
+        // Reduce memory footprint
+        property_set("ro.config.avoid_gfx_accel", "true");
+    }
+}
+
 static void set_build_description(const char *description){
     property_override("ro.build.description", description);
 }
@@ -107,6 +117,8 @@ static void set_build_description(const char *description){
 void vendor_load_properties()
 {
     workaround_snet_properties();
+    set_avoid_gfxaccel_config();
+
     set_build_fingerprint("google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
     set_build_description("walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys");
 }
