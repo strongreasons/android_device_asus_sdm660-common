@@ -53,7 +53,7 @@ ro.netflix.bsp_rev=Q660-13149-1
 ro.nfc.port=I2C
 
 # NTP Server
-persist.backup.ntpServer="0.pool.ntp.org"
+persist.vendor.backup.ntpServer="0.pool.ntp.org"
 
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
