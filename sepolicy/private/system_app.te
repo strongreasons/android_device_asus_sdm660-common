@@ -1,5 +1,9 @@
 binder_call(system_app, storaged)
 
+# HAL3
+get_prop(system_app, camera_prop);
+allow system_app camera_prop:property_service set;
+
 # Backlight Dimmer
 allow system_app sysfs_backlight:file { open read getattr write };
 
