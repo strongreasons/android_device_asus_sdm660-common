@@ -32,6 +32,9 @@ debug.sdm.support_writeback=0
 persist.sys.fingerauto=1
 persist.sys.iscdfinger_998eas=1
 
+# DPM
+persist.vendor.dpm.feature=1
+
 # GPS
 persist.vendor.overlay.izat.optin=rro
 

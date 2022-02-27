@@ -138,6 +138,10 @@ vendor.display.disable_rotator_downscale=1
 vendor.display.disable_scaler=1
 renderthread.skia.reduceopstasksplitting=true
 
+# DPM
+persist.vendor.dpm.loglevel=0
+persist.vendor.dpmhalservice.enable=1
+
 # DRM
 drm.service.enabled=true
 
