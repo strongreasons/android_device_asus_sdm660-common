@@ -155,7 +155,6 @@
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
         <item>"/system/framework/framework.jar"</item>
         <item>"/system/framework/services.jar"</item>
-        <item>"/system/bin/surfaceflinger"</item>
         <item>"/system/lib64/libRScpp.so"</item>
         <item>"/system/lib64/libRS.so"</item>
         <item>"/system/lib64/libRS_internal.so"</item>
@@ -165,6 +164,8 @@
         <item>"/system/lib64/libblas.so"</item>
         <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
+        <item>"/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
+        <item>"/system/bin/surfaceflinger"</item>
     </string-array>
 
     <!-- Keep chosen default camera app pinned in memory for faster launching -->
