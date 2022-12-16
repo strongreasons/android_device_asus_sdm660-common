@@ -55,6 +55,9 @@ vendor.perf.gestureflingboost.enable=true
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
+# RCS
+persist.rcs.supported=1
+
 # RIL
 DEVICE_PROVISIONED=1
 persist.radio.VT_CAM_INTERFACE=2
