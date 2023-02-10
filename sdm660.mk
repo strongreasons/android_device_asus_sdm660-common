@@ -22,7 +22,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio.effect@2.0-service \
     android.hardware.audio.service
 
 PRODUCT_PACKAGES += \
@@ -94,10 +93,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.enable_suspend=true
 
-# CNE
-PRODUCT_PACKAGES += \
-    libcnefeatureconfig
-
 # Display
 PRODUCT_PACKAGES += \
     gralloc.sdm660 \
@@ -141,8 +136,7 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    android.hardware.broadcastradio@1.0-impl \
-    android.hardware.broadcastradio@1.0-service
+    android.hardware.broadcastradio@1.0-impl
 
 PRODUCT_PACKAGES += \
     FM2 \
@@ -167,8 +161,6 @@ PRODUCT_PACKAGES += \
     libbatching \
     libgeofencing \
     libgnss \
-    libgnsspps \
-    libsynergy_loc_api \
     libgps.utils \
     liblocation_api \
     libsensorndkbridge \
@@ -227,7 +219,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
     libavservices_minijail \
     libavservices_minijail.vendor
 
@@ -282,7 +273,6 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
-    libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
