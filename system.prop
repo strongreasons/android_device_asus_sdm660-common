@@ -28,6 +28,13 @@ ro.vendor.use_data_netmgrd=true
 # Disable vsync for cpu rendered apps
 debug.cpurend.vsync=false
 
+# Dirac
+ro.audio.soundfx.dirac=true
+persist.audio.dirac.speaker=true
+persist.dirac.acs.controller=qem
+persist.dirac.acs.ignore_error=1
+persist.dirac.acs.storeSettings=1
+
 # Display
 vendor.display.enable_default_color_mode=1
 vendor.display.disable_skip_validate=1
