@@ -169,7 +169,7 @@
     </string-array>
 
     <!-- Keep chosen default camera app pinned in memory for faster launching -->
-    <bool name="config_pinnerCameraApp">true</bool>
+    <bool name="config_pinnerCameraApp">false</bool>
 
     <!-- Should the pinner service pin the Home application? -->
     <bool name="config_pinnerHomeApp">false</bool>
@@ -210,16 +210,6 @@
     <string-array name="config_biometric_sensors" translatable="false" >
         <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
     </string-array>
-
-    <!-- Device configuration adjusting the minfree tunable in the lowmemorykiller in the
-         kernel.  A high value will cause the lowmemorykiller to fire earlier, keeping more
-         memory in the file cache and preventing I/O thrashing, but allowing fewer processes
-         to stay in memory.  A low value will keep more processes in memory but may cause
-         thrashing if set too low.  Directly added to the default value chosen by
-         ActivityManager based on screen size and total memory for the largest lowmemorykiller
-         bucket, and scaled proportionally to the smaller buckets. 0 keeps the default.
-         Below will adj 6 minfree buckets (in MB) to: 32, 40, 48, 56, 64, 80 -->
-    <integer name="config_lowMemoryKillerMinFreeKbytesAbsolute">81920</integer>
 
     <!-- Flag indicating whether the surface flinger has limited
          alpha compositing functionality in hardware.  If set, the window
